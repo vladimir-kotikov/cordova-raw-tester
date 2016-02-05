@@ -1,0 +1,17 @@
+{
+  "name": "cordova-raw-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "dependencies": {
+    "cordova-lib": "^6.0.0",
+    "cordova-common": "^1.1.0",
+    "q": "^1.4.1",
+    "shelljs": "^0.6.0"
+  },
+  "author": "Vladimir Kotikov <kotikov.vladimir@gmail.com>",
+  "license": "MIT"
+}
