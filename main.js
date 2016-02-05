@@ -11,16 +11,15 @@ events.on('log', console.log)
 
 Q().then(function () {
     if (fs.existsSync('./temp/platforms/windows')) {
+        shell.pushd('./temp');
         return Q();
     }
 
     return cordova.raw.create('./temp')
     .then(function () {
+        shell.pushd('./temp');
         return cordova.raw.platform('add', ['windows@4.3.0']);
     });
-})
-.then(function () {
-    shell.pushd('./temp');
 })
 .then(function () {
     return cordova.raw.build({
